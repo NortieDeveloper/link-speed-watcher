@@ -1,0 +1,19 @@
+[package]
+name = "link-speed-watcher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+notify-rust = "4"
+
+[dependencies.windows]
+version = "0.54.0"
+features = [
+    "Win32_Foundation",
+    "Networking_Connectivity",
+    "Win32_Security",
+    "Win32_System_Threading",
+    "Win32_UI_WindowsAndMessaging",
+]

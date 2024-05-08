@@ -1,1 +1,2 @@
 # link-speed-watcher
+I was having some trouble with my network adapter speed being set to 100mbps instead of 1000mbps when my computer started up. I couldn't find the root cause, so I wrote this little rust program to check my network adapter speed and run a powershell command to restart my network adapter. I'm using the windows task scheduler to run the binary on startup.
